@@ -21,3 +21,4 @@ print(s2);
 let i3 = 30
 //i3=20
 print(i3)
+print("i3:\(i3)")
