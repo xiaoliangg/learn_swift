@@ -51,3 +51,4 @@ var opt2:Int? = 20
 print(opt2)
 print(opt2 ?? 11)
 print(opt2!)
+print("-----swift没有隐式转换-------")
