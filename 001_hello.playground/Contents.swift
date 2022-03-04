@@ -32,3 +32,11 @@ print("-----类型转换-------")
 var a3 = 10
 print("值=" + String(a3))
 print("值=" + String(true))
+print("-----可选类型Optional-------")
+var s4 = "aa";
+var s5 = "10"  //可选类型
+print(Int(s4))
+var s6 = Int("ss") ?? 11
+print("可选类型s6:\(s6)")
+var s7 = Int("12") ?? 11
+print("可选类型s6:\(s7)")
