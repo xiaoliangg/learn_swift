@@ -4,7 +4,7 @@ print("---------结构体:计算属性-----------")
 
 struct Person
 {
-    var value = ""
+    private var value = ""
     var name:String
     {
         set(param)
@@ -29,3 +29,25 @@ var person = Person()
 person.name = "name_test"
 var v = person.name
 print(v)
+
+print("---------结构体:计算属性-只读属性-----------")
+struct Person2
+{
+    private var value = "test-read-only"
+    var name:String
+    {
+        get
+        {
+            return value
+        }
+    }
+    
+    init()
+    {
+        
+    }
+}
+
+var person2 = Person2()
+//person2.name = "name_test" // 编译报错
+print(person2.name)
