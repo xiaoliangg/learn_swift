@@ -27,3 +27,18 @@ var funf:() -> Void = {() -> Void in
     print("匿名函数")
 }
 funf()
+print("------------函数:函数类型作为函数的参数-初次使用-------------")
+func test3(){
+    print("test3")
+}
+var fung:() -> Void = test3
+
+func test4(param:() -> Void)
+{
+    param();
+}
+test4(param: test3)
+// 如下暂时无需深入理解
+test4 {
+    print("自定义函数")
+}
