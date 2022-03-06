@@ -14,3 +14,12 @@ print("------------函数:函数类型定义-------------")
 var funa:() -> Void
 var funb:(Int,String) -> String
 var fund:([String]) -> (Int,String) // 参数时Int类型数组，返回是元组
+
+print("------------函数:函数类型使用1-------------")
+func test2(){
+    print("test2")
+}
+var fune:() -> Void = test2
+fune
+print("------------函数:函数类型使用2-------------")
+
