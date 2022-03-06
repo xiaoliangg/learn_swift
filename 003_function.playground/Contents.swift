@@ -18,3 +18,10 @@ func test2(outname inname:String)
     print(inname)
 }
 test2(outname: "name")
+
+print("-----------函数参数:下划线表示忽略外部名称,调用时直接传值即可-----------")
+func test3(_ inname:String)
+{
+    print(inname)
+}
+test3("name3")
