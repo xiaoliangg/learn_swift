@@ -38,7 +38,12 @@ func test4(param:() -> Void)
     param();
 }
 test4(param: test3)
-// 如下暂时无需深入理解
+
+test4(param: {() -> Void in
+    print("传入时定义匿名函数")
+})
+
 test4 {
-    print("自定义函数")
+    print("传入时定义匿名函数及其简写")
 }
+
