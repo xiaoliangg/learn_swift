@@ -30,3 +30,17 @@ if var b = a
     print("a没有值")
 }
 //print(b??0)  //此行会报错  Cannot find 'b' in scope
+
+print("-----switch的关键字-fallthrough穿透效果-------")
+var e:Int = 10
+switch e
+{
+case 10:
+    print("情况1")
+    fallthrough
+case 20:
+    print("情况2")
+    fallthrough
+default:
+    print("没有匹配")
+}
