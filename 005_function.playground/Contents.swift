@@ -20,6 +20,10 @@ func test2(){
     print("test2")
 }
 var fune:() -> Void = test2
-fune
+fune // 不会调用函数
+fune()
 print("------------函数:函数类型使用2-------------")
-
+var funf:() -> Void = {() -> Void in
+    print("匿名函数")
+}
+funf()
