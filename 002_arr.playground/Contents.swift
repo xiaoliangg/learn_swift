@@ -44,3 +44,15 @@ case 20:
 default:
     print("没有匹配")
 }
+
+print("-----switch匹配元组-------")
+var ee = ("ee",10)
+switch ee
+{
+case ("ee",10):
+    print("情况1")
+case ("ee",20):
+    print("情况2")
+default:
+    print("没有匹配")
+}
