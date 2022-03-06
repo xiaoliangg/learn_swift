@@ -47,3 +47,35 @@ test4 {
     print("传入时定义匿名函数及其简写")
 }
 
+print("------------函数:函数类型作为函数的参数-带参数和返回值-------------")
+func test5(param:String) -> Int{
+    print("param:\(param)")
+    return 111
+}
+var funh:(String) -> Int = test5
+
+func test6(param:(String) -> Int)
+{
+    var i = param("test6");
+    print("i:\(i)")
+}
+test6(param: test5)
+
+test6(param: {(param:String) -> Int in
+    print("传入时定义匿名函数")
+    print("dddddd:\(param)")
+    return 3333
+})
+
+test6(param: {(param) -> Int in //这里简化了参数类型
+    print("传入时定义匿名函数-简化")
+    print("dddddd:\(param)")
+    return 3333
+})
+
+test6(param: {(param) in //这里简化了返回结果
+    print("传入时定义匿名函数-简化2")
+    print("dddddd:\(param)")
+    return 3333
+})
+
