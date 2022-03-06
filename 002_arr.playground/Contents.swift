@@ -56,3 +56,14 @@ case ("ee",20):
 default:
     print("没有匹配")
 }
+print("-----switch匹配区间-------")
+var e3:Int = 3
+switch e3
+{
+case 1..<5:
+    print("情况1")
+case 5..<10:
+    print("情况2")
+default:
+    print("没有匹配")
+}
