@@ -10,3 +10,10 @@ func test1(name:String...)
 }
 
 test1(name:"a","b")
+
+print("-----------函数实参outname，形参inname-----------")
+func test2(outname inname:String)
+{
+    print(inname)
+}
+test2(outname: "name")
