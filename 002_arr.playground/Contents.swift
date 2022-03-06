@@ -67,3 +67,15 @@ case 5..<10:
 default:
     print("没有匹配")
 }
+
+print("-----switch添加额外条件-------")
+var e4 = (10,20)
+switch e4
+{
+case let(name1,name2) where name1 < name2: // 此处的"<"前后要有空格，否则会报错
+    print("情况1")
+case let(name1,name2) where name1 < name2:
+    print("情况2")
+default:
+    print("没有匹配")
+}
