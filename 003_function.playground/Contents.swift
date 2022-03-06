@@ -25,3 +25,12 @@ func test3(_ inname:String)
     print(inname)
 }
 test3("name3")
+
+print("-----------assert断言-----------")
+func test4(i:Int)
+{
+    assert(i<5)
+    print("finish")
+}
+test4(i:4)
+//test4(i:6) //会报错 Assertion failed
