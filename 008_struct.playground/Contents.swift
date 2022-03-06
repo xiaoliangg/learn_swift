@@ -1,6 +1,6 @@
 import UIKit
 
-print("---------结构体:关键字 mutating 修改属性")
+print("---------结构体:关键字 mutating 修改属性-----------")
 struct Student
 {
     var name = "unknown"
@@ -27,3 +27,5 @@ struct Student
         self.name = name; // 不使用 mutating 关键字，会报错:Cannot assign to property: 'self' is immutable
     }
 }
+print("---------结构体:结构体是值传递-----------")
+
