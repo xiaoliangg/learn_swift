@@ -57,3 +57,25 @@ print("---------class_extends:强转-------------")
 var student5 = student2 as! Student
 print(type(of: student5))
 student5.play()
+
+
+class Student2:Person
+{
+    var name:String
+    {
+        set{
+            super.setName(name: newValue + "-Student")
+        }
+        get{
+            return super.getName()
+        }
+    }
+    
+    override init(name: String, age: Int) {
+        super.init(name: name, age: age)
+        self.name = name
+    }
+}
+print("---------class_extends:重写-------------")
+var s1:Person = Student2(name: "liang", age: 11)
+print(s1.getName())
