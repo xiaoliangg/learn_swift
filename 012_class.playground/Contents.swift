@@ -10,6 +10,7 @@ class Student
     
     static let schoolName = "家里蹲大学"
     
+//    init()
     convenience init()
     {
         self.init(name: "default", age: 1, score: 1.0)
