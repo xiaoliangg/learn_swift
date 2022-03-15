@@ -76,6 +76,9 @@ class Student2:Person
         self.name = name
     }
 }
-print("---------class_extends:重写-------------")
+print("---------class_extends:重写 override 关键字-------------")
 var s1:Person = Student2(name: "liang", age: 11)
 print(s1.getName())
+
+print("---------class_extends:final 关键字修饰方法不允许继承-------------")
+
