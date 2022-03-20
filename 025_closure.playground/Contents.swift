@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-print("---------weak_unowned:闭包的循环引用-------------")
+print("---------closure:闭包的循环引用-------------")
 
 class Test
 {
@@ -9,6 +9,8 @@ class Test
     
     // 这里如果不加 lazy 会报错
     lazy var data:()->Void = {
+        // []定义捕获列表解决闭包的循环引用问题
+        [unowned self]
         () -> Void in
         print("data:" + self.name)
     }
