@@ -12,8 +12,16 @@ class Test
         var b = 20
         return a+b
     }
+    
+    deinit{
+        print("反初始化器被调用")
+    }
 }
 
 var test = Test()
 print(test.name)
 print(test.age)
+
+print("---------deinit:反初始化器-------------")
+// 创建一个新对象，自动调用反初始化器
+test = Test()
