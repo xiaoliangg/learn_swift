@@ -34,8 +34,9 @@ try play1(param: 12) // 如果抛出异常，会停止执行并向上抛出异�
 print("分隔线一")
 
 // Did you mean to handle error as optional value?
-try? play1(param: -1)
-print("分隔线二") // 如果抛出异常，会继续执行
+var value2 = try? play1(param: -1)
+print(value2) // 打印 nil或optional
+print("分隔线二:") // 如果抛出异常，会继续执行
 
 // Did you mean to disable error propagation?
 try! play1(param: 12) // 确保不会抛出异常时使用这种
