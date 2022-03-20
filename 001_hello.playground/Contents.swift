@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 var greeting = "Hello, playground"
 print(greeting)
@@ -67,3 +68,29 @@ print("-----元组声明时下划线_ 表示忽略-------")
 let (name5,_,name6) = ("sname1",15,11.3)
 print(name5,name6)
 
+
+print("String的其他方法初始化")
+var test:String = {() ->String in
+    return "ss"
+}()
+//简单写法
+var test2:String = {
+    return "ss"
+}()
+
+
+print("初始化类写成闭包形式，以便在代码块中写更多的代码")
+class Test
+{
+    var name:String?
+    init()
+    {
+        self.name = "hello"
+    }
+}
+// 两种写法均可
+//var test3:Test = {() -> Test in
+var test3:Test = {
+    return Test()
+}()
+print(test3.name)
