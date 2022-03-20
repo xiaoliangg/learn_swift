@@ -9,7 +9,7 @@ enum TestError:String,Error
 }
 
 // throws 标记方法可能跑出错误
-func play1(param:Int) throws -> String
+func play1(param:Int) throws -> String // 注意先写 throws 再写返回值
 {
     if(param < 0)
     {
