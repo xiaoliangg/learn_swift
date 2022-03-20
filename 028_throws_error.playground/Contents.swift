@@ -60,7 +60,15 @@ do{
 }
 // 类似finally
 defer{
-    print("执行defer")
+    print("执行defer")  //最后执行
 }
 // ??为什么先执行下面语句，再执行defer
 print("分隔线四")
+
+
+print("---------throws_error:Error作为参数的.写法-------------")
+func play2(param:TestError)
+{
+    print("liangliang")
+}
+play2(param:.error1)
