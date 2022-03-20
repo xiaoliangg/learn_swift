@@ -61,5 +61,5 @@ do{
 defer{
     print("执行defer")
 }
-
+// ??为什么先执行下面语句，再执行defer
 print("分隔线四")
