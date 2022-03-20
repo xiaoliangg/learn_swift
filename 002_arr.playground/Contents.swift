@@ -14,9 +14,16 @@ func handle(param:(Int,String,Double)) -> (Int,String,Double)
 }
 
 print(arr)
+print(type(of: arr))
 print("-------------------")
 let arr2 = handle(param: arr)
 print(arr2)
+
+print("-----数组类型的定义和转换-------")
+var arr3:Any = ["1","2","3"]
+print(type(of: arr3))
+var arr4:[String]? = arr3 as? [String]
+print(type(of: arr4))
 
 
 
