@@ -25,4 +25,7 @@ class Test
 }
 
 var test:Test? = Test(name: "hello")
+// 闭包里引用了自己，会导致对象不被释放
+test!.data()
+
 test = nil
