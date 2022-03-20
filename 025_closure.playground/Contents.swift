@@ -31,3 +31,6 @@ var test:Test? = Test(name: "hello")
 test!.data()
 
 test = nil
+
+
+print("---------other:weak和unowned的区别-------------")
